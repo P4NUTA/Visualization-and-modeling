@@ -1,0 +1,83 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage[left=2.00cm, right=2.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\linespread{1.25}
+\usepackage{setspace}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+\let\paragraph\ignorespaces
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\begin{document}
+	
+\begin{titlepage}
+	
+\begin{center}
+	\large Университет ИТМО\\[5cm]
+	\LARGE Практическая работа №1\\
+	\normalsize по дисциплине <<Визуализация и моделирование>>\\[5cm]
+\end{center}
+\begin{flushright}
+		\begin{minipage}{0.6\textwidth}
+		\begin{flushleft}
+			\large
+			\singlespacing 
+			\textbf{Автор:} Ефимов Павел Леонидови\\
+			\textbf{Поток:} ВИМ 1.1\\
+			\textbf{Группа:} К3220\\
+			\textbf{Факультет:} ИКТ\\
+			\textbf{Преподаватель:} Чернышева А.В.
+		\end{flushleft}
+	\end{minipage}
+\end{flushright}
+
+\vfill
+
+\begin{center}
+	{\large Санкт-Петербург, \the\year{ г.}}
+\end{center}
+ 
+\end{titlepage}
+\normalsize
+
+Датасет: https://www.kaggle.com/tmdb/tmdb-movie-metadata\\
+Датасет содержит 5 тысяч фильмов с TMDb. В датасете собраны такие данные как: бюджет, компания производитель, дата выхода, прибыль, средний балл.\\ 
+\begin{tabular}{ | l | l | l | }
+\hline
+Название столбца & Даннные, хранящиеся в столбце & Тип данных \\ \hline
+budget & Бюджет фильма & Целое число \\
+genres & Жанры & Строка \\
+homepage & Сайт фильма & Строка \\
+id & Номер фильма & Целое число \\
+keywords & Ключевые слова & Строки \\
+original\_language & Язык оригинала & Строка \\
+original\_title & Оригинальное название & Строка \\
+overview & Описание & Строка \\
+popularity & Популярность & Число с плавающей точкой \\
+production\_companies & Компания производитель & Строка \\
+production\_countries & Страна производитель & Строка \\
+release\_date & Дата выхода & Дата \\
+revenue & Прибыль & Целое число \\
+runtime & Время показа на экране & Целое число \\
+spoken\_languages & Язык озвучки фильма & Строка \\
+status & Статус & Строка \\
+tagline & Слоган & Строка \\
+title & Название & Строка \\
+vote\_average & Средняя оценка & Число с плавающей точкой \\
+vote\_count & Количество голосов & Целое число \\
+\hline
+\end{tabular} \\ \\
+
+\textbf{Задачи решаемые датасетом:}
+\begin{enumerate} 
+  \item Нахождение самых популярных: серий фильмов, режиссеров, жанров
+  \item Определение лучшей даты выхода фильма
+  \item Вывод зависимости от средней оценки, жанра и режиссера фильма на прибыль
+  \item Нахождение самых популярных, прибыльных студий
+\end{enumerate}
+
+\end{document}
